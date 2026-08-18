@@ -1,0 +1,90 @@
+device: cuda
+train 466장 / 스톤 1907개 → 5-fold (crop 384 원본 해상도)
+crop 캐시 구축 중...
+  crop 캐시 100/457장
+  crop 캐시 200/457장
+  crop 캐시 300/457장
+  crop 캐시 400/457장
+
+===== fold 0: 스톤 train 1521 / val 386 =====
+[fold 0] ep   1 | loss 0.1837 | val 스톤 cells 일치 335/386  * best
+[fold 0] ep   2 | loss 0.0702 | val 스톤 cells 일치 356/386  * best
+[fold 0] ep   3 | loss 0.0496 | val 스톤 cells 일치 370/386  * best
+[fold 0] ep   4 | loss 0.0326 | val 스톤 cells 일치 374/386  * best
+[fold 0] ep   5 | loss 0.0236 | val 스톤 cells 일치 373/386
+[fold 0] ep   6 | loss 0.0210 | val 스톤 cells 일치 376/386  * best
+[fold 0] ep   7 | loss 0.0196 | val 스톤 cells 일치 378/386  * best
+[fold 0] ep  10 | loss 0.0090 | val 스톤 cells 일치 377/386
+[fold 0] ep  13 | loss 0.0164 | val 스톤 cells 일치 379/386  * best
+[fold 0] ep  14 | loss 0.0073 | val 스톤 cells 일치 382/386  * best
+[fold 0] ep  15 | loss 0.0107 | val 스톤 cells 일치 379/386
+[fold 0] ep  20 | loss 0.0053 | val 스톤 cells 일치 381/386
+[fold 0] 종료 (best ep 14: 382/386)
+
+===== fold 1: 스톤 train 1541 / val 366 =====
+[fold 1] ep   1 | loss 0.1796 | val 스톤 cells 일치 320/366  * best
+[fold 1] ep   2 | loss 0.0610 | val 스톤 cells 일치 349/366  * best
+[fold 1] ep   4 | loss 0.0252 | val 스톤 cells 일치 352/366  * best
+[fold 1] ep   5 | loss 0.0220 | val 스톤 cells 일치 350/366
+[fold 1] ep   6 | loss 0.0149 | val 스톤 cells 일치 355/366  * best
+[fold 1] ep   7 | loss 0.0152 | val 스톤 cells 일치 358/366  * best
+[fold 1] ep  10 | loss 0.0089 | val 스톤 cells 일치 358/366
+[fold 1] ep  15 | loss 0.0061 | val 스톤 cells 일치 357/366
+[fold 1] ep  17 | loss 0.0080 | val 스톤 cells 일치 360/366  * best
+[fold 1] ep  19 | loss 0.0040 | val 스톤 cells 일치 363/366  * best
+[fold 1] ep  20 | loss 0.0063 | val 스톤 cells 일치 355/366
+[fold 1] ep  25 | loss 0.0034 | val 스톤 cells 일치 359/366
+[fold 1] 종료 (best ep 19: 363/366)
+
+===== fold 2: 스톤 train 1503 / val 404 =====
+[fold 2] ep   1 | loss 0.1863 | val 스톤 cells 일치 363/404  * best
+[fold 2] ep   2 | loss 0.0611 | val 스톤 cells 일치 377/404  * best
+[fold 2] ep   3 | loss 0.0340 | val 스톤 cells 일치 387/404  * best
+[fold 2] ep   5 | loss 0.0144 | val 스톤 cells 일치 385/404
+[fold 2] ep   6 | loss 0.0143 | val 스톤 cells 일치 388/404  * best
+[fold 2] ep   7 | loss 0.0132 | val 스톤 cells 일치 390/404  * best
+[fold 2] ep  10 | loss 0.0070 | val 스톤 cells 일치 384/404
+[fold 2] ep  13 | loss 0.0086 | val 스톤 cells 일치 391/404  * best
+[fold 2] ep  15 | loss 0.0084 | val 스톤 cells 일치 391/404
+[fold 2] ep  16 | loss 0.0051 | val 스톤 cells 일치 393/404  * best
+[fold 2] ep  18 | loss 0.0045 | val 스톤 cells 일치 395/404  * best
+[fold 2] ep  20 | loss 0.0022 | val 스톤 cells 일치 395/404
+[fold 2] ep  25 | loss 0.0039 | val 스톤 cells 일치 387/404
+[fold 2] 종료 (best ep 18: 395/404)
+
+===== fold 3: 스톤 train 1531 / val 376 =====
+[fold 3] ep   1 | loss 0.1813 | val 스톤 cells 일치 343/376  * best
+[fold 3] ep   2 | loss 0.0671 | val 스톤 cells 일치 364/376  * best
+[fold 3] ep   4 | loss 0.0281 | val 스톤 cells 일치 367/376  * best
+[fold 3] ep   5 | loss 0.0199 | val 스톤 cells 일치 369/376  * best
+[fold 3] ep   7 | loss 0.0121 | val 스톤 cells 일치 370/376  * best
+[fold 3] ep  10 | loss 0.0104 | val 스톤 cells 일치 371/376  * best
+[fold 3] ep  15 | loss 0.0059 | val 스톤 cells 일치 367/376
+[fold 3] ep  20 | loss 0.0033 | val 스톤 cells 일치 369/376
+[fold 3] 종료 (best ep 10: 371/376)
+
+===== fold 4: 스톤 train 1532 / val 375 =====
+[fold 4] ep   1 | loss 0.1776 | val 스톤 cells 일치 330/375  * best
+[fold 4] ep   2 | loss 0.0637 | val 스톤 cells 일치 358/375  * best
+[fold 4] ep   3 | loss 0.0349 | val 스톤 cells 일치 362/375  * best
+[fold 4] ep   4 | loss 0.0256 | val 스톤 cells 일치 367/375  * best
+[fold 4] ep   5 | loss 0.0209 | val 스톤 cells 일치 360/375
+[fold 4] ep   6 | loss 0.0150 | val 스톤 cells 일치 368/375  * best
+[fold 4] ep   7 | loss 0.0128 | val 스톤 cells 일치 370/375  * best
+[fold 4] ep   9 | loss 0.0086 | val 스톤 cells 일치 371/375  * best
+[fold 4] ep  10 | loss 0.0073 | val 스톤 cells 일치 369/375
+[fold 4] ep  15 | loss 0.0131 | val 스톤 cells 일치 370/375
+[fold 4] 종료 (best ep 9: 371/375)
+
+임계값 스윕 (out-of-fold, 스톤 단위 cells 완전 일치):
+  cells_thr 0.30: 1878/1907 (98.48%)
+  cells_thr 0.35: 1879/1907 (98.53%)
+  cells_thr 0.40: 1879/1907 (98.53%)
+  cells_thr 0.45: 1879/1907 (98.53%)
+  cells_thr 0.50: 1882/1907 (98.69%)
+  cells_thr 0.55: 1882/1907 (98.69%)
+  cells_thr 0.60: 1881/1907 (98.64%)
+  cells_thr 0.65: 1881/1907 (98.64%)
+  cells_thr 0.70: 1880/1907 (98.58%)
+선택: cells_thr 0.5 (OOF 1882/1907 = 98.69%)
+완료. eval_test.py 로 2단계 파이프라인 test 평가를 실행하세요.

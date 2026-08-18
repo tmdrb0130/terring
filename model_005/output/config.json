@@ -1,0 +1,19 @@
+{
+  "seed": 42,
+  "crop": 384,
+  "region": 512,
+  "jitter": 16,
+  "rot": 20.0,
+  "scale_lo": 0.8,
+  "scale_hi": 1.2,
+  "max_epochs": 60,
+  "patience": 10,
+  "batch_size": 32,
+  "lr_backbone": 0.0001,
+  "lr_head": 0.001,
+  "weight_decay": 0.0001,
+  "repeat_per_epoch": 2,
+  "cells_thr": 0.5,
+  "n_folds": 5,
+  "cells_thr_final": 0.5
+}

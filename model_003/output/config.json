@@ -1,0 +1,20 @@
+{
+  "seed": 42,
+  "img_w": 576,
+  "img_h": 768,
+  "stride": 4,
+  "sigma_stone": 3.0,
+  "sigma_corner": 2.0,
+  "max_epochs": 90,
+  "patience": 15,
+  "batch_size": 6,
+  "lr_backbone": 0.0001,
+  "lr_head": 0.001,
+  "weight_decay": 0.0001,
+  "repeat_per_epoch": 2,
+  "corner_reg_w": 2.0,
+  "offset_w": 1.0,
+  "peak_thr_train": 0.35,
+  "n_folds": 5,
+  "max_per_color": 3
+}
