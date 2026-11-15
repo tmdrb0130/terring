@@ -33,6 +33,19 @@ terring 보드(3x3 점수판 + 중앙 5원 x2)에 스톤(red/blue 최대 6개)�
    ```
 4. 전 모델 비교: 루트에서 `terring\Scripts\python.exe eval_all_models.py`
 
+## 실행 프로그램 (개발 환경 없이 사용)
+
+`app/` 폴더에 사진을 고르면 채점해 주는 Windows 프로그램 소스가 있다 (model_005 방식:
+1단계 model_004 탐지 + 2단계 model_005 칸 판정, CPU 전용).
+
+- `app/terring_app.py`, `app/terring_core.py` — GUI 와 추론 코어 (학습 코드·데이터 없이 체크포인트만 사용)
+- `app/build_exe.py` — PyInstaller 로 `dist/터링채점기/` 생성 (준비 방법은 파일 상단 주석)
+- `app/installer.iss` — Inno Setup 으로 `dist/터링채점기_설치.exe` 생성
+- `app/verify_core.py` — 추론 코어가 원본 평가 코드와 같은 결과를 내는지 검사
+- `app/sample/` — 테스트용 이미지 (원본 사진이 아니라 review.html 카드에서 잘라낸 것)
+
+설치 파일(약 600MB)과 빌드 산출물은 용량 때문에 git 에 포함하지 않는다.
+
 ## 현행 성능 (test 117장, 완전 일치 기준)
 
 - model_004 (탐지 CNN + cells 직접 학습): 89.7%

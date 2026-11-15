@@ -19,3 +19,11 @@ backup_before_resplit/
 # OS
 Thumbs.db
 .DS_Store
+
+# exe 빌드 (app/build_exe.py) — 빌드 환경과 산출물은 로컬 보관
+.venv_build/
+build/
+dist/
+
+# exe 샘플 사진은 포함 (review.html 카드에서 잘라낸 테스트용 이미지)
+!app/sample/*.jpg
